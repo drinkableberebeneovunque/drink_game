@@ -207,9 +207,10 @@ const questions = [
     optionsContainer.innerHTML = '';
     
     questionData.options.forEach(option => {
-        const button = document.createElement('button');
+       const button = document.createElement('button');
         button.className = 'option-button';
         button.style.backgroundImage = `url(${option.image})`;
+        button.style.backgroundSize = 'cover';
         
         const content = document.createElement('div');
         content.className = 'option-content';
